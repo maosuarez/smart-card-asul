@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
-import { SmartCard } from "@/components/smart-card"
-import { getPersonData } from "@/lib/person-data"
+import { SmartCard } from "@/app/components/smart-card"
+import { getPersonData } from "@/src/lib/person-data"
 
 interface PageProps {
   params: Promise<{ id: string }>

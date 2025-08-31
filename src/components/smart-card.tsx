@@ -1,11 +1,11 @@
 "use client"
 
-import type { PersonData } from "@/lib/person-data.ts"
-import { generateCardUrl } from "@/lib/person-data"
-import { generateVCard, downloadVCard } from "@/lib/vcard-utils"
+import type { PersonData } from "@/src/lib/person-data"
+import { generateCardUrl } from "@/src/lib/person-data"
+import { generateVCard, downloadVCard } from "@/src/lib/vcard-utils"
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/app/components/ui/button"
+import { Card } from "@/app/components/ui/card"
 import { Download, QrCode, Mail, Phone, Share2, ExternalLink } from "lucide-react"
 import { QRCodeGenerator } from "./qr-code-generator"
 import { useState } from "react"
