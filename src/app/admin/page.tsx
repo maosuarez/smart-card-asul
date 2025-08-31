@@ -1,9 +1,9 @@
 "use client"
 
 import { getAllPeople, generateCardUrl } from "@/src/lib/person-data"
-import { Card, CardContent, CardHeader, CardTitle } from "@/app/components/ui/card"
-import { Button } from "@/app/components/ui/button"
-import { QRCodeGenerator } from "@/app/components/qr-code-generator"
+import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
+import { Button } from "@/src/components/ui/button"
+import { QRCodeGenerator } from "@/src/components/qr-code-generator"
 import Link from "next/link"
 
 export default function AdminPage() {

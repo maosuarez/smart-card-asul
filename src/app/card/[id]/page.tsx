@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { SmartCard } from "@/app/components/smart-card"
+import { SmartCard } from "@/src/components/smart-card"
 import { getPersonData } from "@/src/lib/person-data"
 
 interface PageProps {
