@@ -3,7 +3,7 @@ name: Build, Push and Deploy Docker Image to ACR
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -20,4 +20,5 @@ jobs:
         run: docker build . -t ${{ secrets.AZURE_ACR_NAME }}.azurecr.io/smart-card:latest
 
       - name: Push Docker image
+
         run: docker push ${{ secrets.AZURE_ACR_NAME }}.azurecr.io/smart-card:latest
